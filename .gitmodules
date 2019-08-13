@@ -4,3 +4,6 @@
 [submodule "abc_lib"]
 	path = abc_lib
 	url = https://github.com/krexspace/abc_lib.git
+[submodule "xyc_shared_lib"]
+	path = xyc_shared_lib
+	url = https://github.com/krexspace/xyc_shared_lib.git

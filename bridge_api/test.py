@@ -1,5 +1,6 @@
 
 import example as ex
+# Make sure you copy the pyd file to this directory and rename it exmaple.pyd
 
 A = [1.,2.,3.,4.]
 
