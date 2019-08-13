@@ -1,3 +1,6 @@
 [submodule "pybind11"]
 	path = pybind11
 	url = https://github.com/pybind/pybind11.git
+[submodule "abc_lib"]
+	path = abc_lib
+	url = https://github.com/krexspace/abc_lib.git

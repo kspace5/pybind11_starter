@@ -2,6 +2,7 @@
 #include <pybind11/stl.h>
 #include <vector>
 #include <map>
+#include "utils.h"
 
 // ----------------
 // Regular C++ code
@@ -13,7 +14,8 @@
 std::vector<double> modify(const std::vector<double>& input)
 {
   std::vector<double> output;
-
+  std::vector<int> ivec = qx::util::split_to_ints("12|2343|23434", '|');
+  printf("ivec size: %d", (int)ivec.size());
   std::transform(
     input.begin(),
     input.end(),
