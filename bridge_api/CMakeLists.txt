@@ -10,9 +10,10 @@ include_directories( ${INCLUDE_DIR} )
 ##################################################
 # Set - External Libraries
 ##################################################
-set( LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../lib )
+# Assumes libraries are copied to current src dir for simplicity
+set( LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR} )
 
 add_subdirectory(../pybind11 build)
 pybind11_add_module(example example.cpp)
 # PUBLIC here is critical
-target_link_libraries( example PUBLIC ${LIBS_PATH}/abc.lib)
+target_link_libraries( example PRIVATE ${LIBS_PATH}/libabc.a)
